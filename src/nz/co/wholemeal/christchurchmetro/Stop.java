@@ -73,6 +73,7 @@ class Stop {
   public String name;
   public String platformTag;
   public String platformNumber;
+  public String customStopName;
   public String roadName;
   public String routes;
   public double latitude;
@@ -112,6 +113,7 @@ class Stop {
       this.roadName = cursor.getString(3);
       this.latitude = cursor.getDouble(4);
       this.longitude = cursor.getDouble(5);
+      this.customStopName = cursor.getString(6);
       cursor.close();
       database.close();
     } else {

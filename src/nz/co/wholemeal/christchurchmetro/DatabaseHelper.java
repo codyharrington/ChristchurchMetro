@@ -35,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
   private static String DATABASE_NAME = "metroinfo.sqlite3";
   private static String CREATE_PLATFORMS = " CREATE TABLE platforms " +
     "(platform_tag INT, platform_number INT, name VARCHAR, road_name VARCHAR," +
-    "latitude DOUBLE, longitude DOUBLE)";
+    "latitude DOUBLE, longitude DOUBLE, custom_name VARCHAR)";
   private static String CREATE_PATTERNS = "CREATE TABLE patterns " +
     "(route_number varchar, route_name varchar, destination varchar, " +
     "route_tag varchar, pattern_name varchar, direction varchar, " +

@@ -312,6 +312,10 @@ public class FavouritesActivity extends ListActivity implements LoadRoutesActivi
     return false;
   }
 
+  public void assignCustomStopName(String name, Stop stop) {
+    this.customStopName = name;
+  }
+
   public void removeFavourite(Stop stop) {
     if (isFavourite(stop)) {
       Log.d(TAG, "Removed stop " + stop.platformNumber + " from favourites");
