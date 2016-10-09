@@ -224,6 +224,7 @@ class Stop {
           stop.roadName = cursor.getString(3);
           stop.latitude = cursor.getDouble(4);
           stop.longitude = cursor.getDouble(5);
+          stop.customStopName = cursor.getString(6);
           stops.add(stop);
         } while (cursor.moveToNext());
       }
